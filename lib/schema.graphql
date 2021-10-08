@@ -1,0 +1,5 @@
+type Query {
+    "Retorna live onlines"
+        liveDataGroup: String,
+        offlineData: String
+}
