@@ -1,5 +1,15 @@
+type dataItem {
+    _id: ID!,
+    _name: String,
+    _value: String
+
+}
 type Query {
     "Retorna live onlines"
-        liveDataGroup: String,
+        liveDataGroup: [dataItem]
+
+    "Return a single DataItem"
+        getDataItem(id: ID!): dataItem
+
         offlineData: String
 }
